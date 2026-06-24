@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SVG DEFS -->
+<svg style="display:none">
+    <defs>
+        <filter id="shadow3d">
+            <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+        </filter>
+        <filter id="shadow3d-sm">
+            <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.25"/>
+        </filter>
+    </defs>
+</svg>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header__container">
+        <a href="#" class="header__logo">DEV<span class="accent-blue">PROFILE</span></a>
+        <nav class="header__nav">
+            <a href="#about" class="header__link" data-ru="О профессии" data-en="About">О профессии</a>
+            <a href="#tasks" class="header__link" data-ru="Задачи" data-en="Tasks">Задачи</a>
+            <a href="#skills" class="header__link" data-ru="Навыки" data-en="Skills">Навыки</a>
+            <a href="#career" class="header__link" data-ru="Карьера" data-en="Career">Карьера</a>
+            <a href="#ertch" class="header__link" data-ru="ЭРТХ" data-en="ERTH">ЭРТХ</a>
+        </nav>
+        <div class="header__controls">
+            <button class="btn btn--lang" onclick="setLang('ru')" id="btnRU">RU</button>
+            <button class="btn btn--lang" onclick="setLang('en')" id="btnEN">EN</button>
+            <button class="btn btn--theme" onclick="toggleTheme()" id="btnTheme">&#9728;&#65039;</button>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero__container">
+        <div class="hero__content">
+            <p class="hero__label" data-ru="Профессия" data-en="Profession">Профессия</p>
+            <h1 class="hero__title" data-ru="Разработчик" data-en="Developer">Разработчик</h1>
+            <p class="hero__desc" data-ru="Создаю цифровые продукты, которыми пользуются миллионы людей. Каждая строка кода — это решение реальной задачи." data-en="I create digital products used by millions of people. Every line of code solves a real problem.">Создаю цифровые продукты, которыми пользуются миллионы людей. Каждая строка кода — это решение реальной задачи.</p>
+            <div class="hero__tags">
+                <span class="tag tag--blue">HTML / CSS</span>
+                <span class="tag tag--orange">JavaScript</span>
+                <span class="tag tag--yellow">React</span>
+                <span class="tag tag--blue">Node.js</span>
+                <span class="tag tag--orange">Git</span>
+            </div>
+            <a href="#about" class="btn btn--primary" data-ru="Узнать больше" data-en="Learn more">Узнать больше</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Кто такой разработчик" data-en="Who is a Developer">Кто такой разработчик</h2>
+        <p class="section__subtitle" data-ru="Объясняем простыми словами" data-en="Explained in simple terms">Объясняем простыми словами</p>
+        <div class="cards cards--3">
+            <div class="card">
+                <div class="card__icon card__icon--blue">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="#888" stroke-width="2"/><path d="M8 10l-2 2 2 2M16 10l2 2-2 2M14 8l-4 8" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="card__title" data-ru="Строитель digital-мира" data-en="Digital World Builder">Строитель digital-мира</h3>
+                <p class="card__text" data-ru="Это специалист, который превращает дизайн в работающий сайт или приложение. Как архитектор строит здание, так разработчик строит цифровые продукты." data-en="This is a specialist who turns design into a working website or application. Just as an architect builds a building, a developer builds digital products.">Это специалист, который превращает дизайн в работающий сайт или приложение. Как архитектор строит здание, так разработчик строит цифровые продукты.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--orange">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="#888" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3 class="card__title" data-ru="Мост между идеей и продуктом" data-en="Bridge between Idea and Product">Мост между идеей и продуктом</h3>
+                <p class="card__text" data-ru="Разработчик берёт идею бизнеса и превращает её в интерфейс, с которым взаимодействуют пользователи. Он связывает дизайн, логику и данные." data-en="A developer takes a business idea and turns it into an interface that users interact with. He connects design, logic and data.">Разработчик берёт идею бизнеса и превращает её в интерфейс, с которым взаимодействуют пользователи. Он связывает дизайн, логику и данные.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="card__title" data-ru="Универсал digital-среды" data-en="Digital Environment Universalist">Универсал digital-среды</h3>
+                <p class="card__text" data-ru="От вёрстки лендинга до сложных SPA-приложений — разработчик закрывает весь цикл создания продукта. Frontend, backend, деплой — всё в его руках." data-en="From landing page layout to complex SPA applications — the developer covers the entire product creation cycle. Frontend, backend, deployment — everything is in their hands.">От вёрстки лендинга до сложных SPA-приложений — разработчик закрывает весь цикл создания продукта. Frontend, backend, деплой — всё в его руках.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TASKS -->
+<section class="section section--gray" id="tasks">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Рабочие задачи" data-en="Work Tasks">Рабочие задачи</h2>
+        <p class="section__subtitle" data-ru="5-7 основных направлений работы" data-en="5-7 main areas of work">5-7 основных направлений работы</p>
+
+        <div class="tabs">
+            <button class="tabs__btn tabs__btn--active" onclick="showTab('tab1',this)" data-ru="Все задачи" data-en="All Tasks">Все задачи</button>
+            <button class="tabs__btn" onclick="showTab('tab2',this)" data-ru="Frontend" data-en="Frontend">Frontend</button>
+            <button class="tabs__btn" onclick="showTab('tab3',this)" data-ru="Backend" data-en="Backend">Backend</button>
+            <button class="tabs__btn" onclick="showTab('tab4',this)" data-ru="Процессы" data-en="Processes">Процессы</button>
+        </div>
+
+        <div class="tabs__content tabs__content--active" id="tab1">
+            <div class="cards cards--3">
+                <div class="card">
+                    <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#888" stroke-width="2"/><path d="M7 8h10M7 12h6M7 16h8" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Вёрстка макетов" data-en="Layout Development">Вёрстка макетов</h3>
+                    <p class="card__text" data-ru="Превращаю дизайн-макеты в чистый HTML/CSS код. Адаптивность для всех устройств — обязательно." data-en="I convert design layouts into clean HTML/CSS code. Responsive design for all devices is mandatory.">Превращаю дизайн-макеты в чистый HTML/CSS код. Адаптивность для всех устройств — обязательно.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Разработка функционала" data-en="Feature Development">Разработка функционала</h3>
+                    <p class="card__text" data-ru="Пишу интерактивные элементы на JavaScript: формы, анимации, динамический контент, SPA." data-en="I write interactive elements in JavaScript: forms, animations, dynamic content, SPA.">Пишу интерактивные элементы на JavaScript: формы, анимации, динамический контент, SPA.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="#888" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Работа с API" data-en="API Integration">Работа с API</h3>
+                    <p class="card__text" data-ru="Подключаю фронтенд к серверным данным через REST и GraphQL. Обрабатываю ответы и ошибки." data-en="I connect frontend to server data via REST and GraphQL. I handle responses and errors.">Подключаю фронтенд к серверным данным через REST и GraphQL. Обрабатываю ответы и ошибки.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Бэкенд-разработка" data-en="Backend Development">Бэкенд-разработка</h3>
+                    <p class="card__text" data-ru="Создаю серверную логику, базы данных, авторизацию и бизнес-процессы на Node.js / Python / PHP." data-en="I create server logic, databases, authorization and business processes on Node.js / Python / PHP.">Создаю серверную логику, базы данных, авторизацию и бизнес-процессы на Node.js / Python / PHP.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M9 11l3 3L22 4" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Тестирование и отладка" data-en="Testing and Debugging">Тестирование и отладка</h3>
+                    <p class="card__text" data-ru="Ищу и исправляю баги, пишу тесты, проверяю кроссбраузерную совместимость." data-en="I find and fix bugs, write tests, check cross-browser compatibility.">Ищу и исправляю баги, пишу тесты, проверяю кроссбраузерную совместимость.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Деплой и оптимизация" data-en="Deployment and Optimization">Деплой и оптимизация</h3>
+                    <p class="card__text" data-ru="Размещаю сайты на хостинге, настраиваю CI/CD, оптимизирую скорость загрузки." data-en="I publish sites to hosting, set up CI/CD, optimize loading speed.">Размещаю сайты на хостинге, настраиваю CI/CD, оптимизирую скорость загрузки.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                    <h3 class="card__title" data-ru="Документация и код-ревью" data-en="Documentation and Code Review">Документация и код-ревью</h3>
+                    <p class="card__text" data-ru="Описываю архитектуру, провожу ревью кода коллег, передаю знания команде." data-en="I describe architecture, review colleagues' code, transfer knowledge to the team.">Описываю архитектуру, провожу ревью кода коллег, передаю знания команде.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><circle cx="12" cy="12" r="3" stroke="#888" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <h3 class="card__title" data-ru="DevOps и автоматизация" data-en="DevOps and Automation">DevOps и автоматизация</h3>
+                    <p class="card__text" data-ru="Настраиваю CI/CD-пайплайны, автоматизирую деплой и управление инфраструктурой через Docker и Kubernetes." data-en="I set up CI/CD pipelines, automate deployment and infrastructure management with Docker and Kubernetes.">Настраиваю CI/CD-пайплайны, автоматизирую деплой и управление инфраструктурой через Docker и Kubernetes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__content" id="tab2">
+            <div class="cards cards--3">
+                <div class="card"><div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#888" stroke-width="2"/><path d="M7 8h10M7 12h6M7 16h8" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div><h3 class="card__title" data-ru="Вёрстка макетов" data-en="Layout Development">Вёрстка макетов</h3><p class="card__text" data-ru="Превращаю дизайн-макеты в чистый HTML/CSS код." data-en="I convert design layouts into clean HTML/CSS code.">Превращаю дизайн-макеты в чистый HTML/CSS код.</p></div>
+                <div class="card"><div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="card__title" data-ru="Разработка функционала" data-en="Feature Development">Разработка функционала</h3><p class="card__text" data-ru="Пишу интерактивные элементы на JavaScript." data-en="I write interactive elements in JavaScript.">Пишу интерактивные элементы на JavaScript.</p></div>
+                <div class="card"><div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="#888" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div><h3 class="card__title" data-ru="Работа с API" data-en="API Integration">Работа с API</h3><p class="card__text" data-ru="Подключаю фронтенд к серверным данным." data-en="I connect frontend to server data.">Подключаю фронтенд к серверным данным.</p></div>
+            </div>
+        </div>
+
+        <div class="tabs__content" id="tab3">
+            <div class="cards cards--3">
+                <div class="card"><div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="card__title" data-ru="Бэкенд-разработка" data-en="Backend Development">Бэкенд-разработка</h3><p class="card__text" data-ru="Создаю серверную логику и базы данных." data-en="I create server logic and databases.">Создаю серверную логику и базы данных.</p></div>
+                <div class="card"><div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M9 11l3 3L22 4" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="card__title" data-ru="Тестирование" data-en="Testing">Тестирование</h3><p class="card__text" data-ru="Ищу и исправляю баги, пишу тесты." data-en="I find and fix bugs, write tests.">Ищу и исправляю баги, пишу тесты.</p></div>
+            </div>
+        </div>
+
+        <div class="tabs__content" id="tab4">
+            <div class="cards cards--3">
+                <div class="card"><div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="card__title" data-ru="Деплой" data-en="Deployment">Деплой</h3><p class="card__text" data-ru="Размещаю сайты на хостинге." data-en="I publish sites to hosting.">Размещаю сайты на хостинге.</p></div>
+                <div class="card"><div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="card__title" data-ru="Документация" data-en="Documentation">Документация</h3><p class="card__text" data-ru="Описываю архитектуру, передаю знания." data-en="I describe architecture, transfer knowledge.">Описываю архитектуру, передаю знания.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Hard Skills & Soft Skills" data-en="Hard Skills & Soft Skills">Hard Skills & Soft Skills</h2>
+        <p class="section__subtitle" data-ru="Что нужно знать и уметь" data-en="What you need to know and be able to do">Что нужно знать и уметь</p>
+
+        <h3 class="skills__subtitle" data-ru="Hard Skills" data-en="Hard Skills">Hard Skills</h3>
+        <div class="pills">
+            <span class="pill pill--blue">HTML5</span>
+            <span class="pill pill--orange">CSS3</span>
+            <span class="pill pill--yellow">JavaScript</span>
+            <span class="pill pill--blue">TypeScript</span>
+            <span class="pill pill--orange">React / Vue / Angular</span>
+            <span class="pill pill--yellow">Node.js</span>
+            <span class="pill pill--blue">Git</span>
+            <span class="pill pill--orange">REST API / GraphQL</span>
+            <span class="pill pill--yellow">SQL / NoSQL</span>
+            <span class="pill pill--blue">Docker</span>
+            <span class="pill pill--orange">Webpack / Vite</span>
+            <span class="pill pill--yellow">Linux / Terminal</span>
+        </div>
+
+        <h3 class="skills__subtitle" data-ru="Soft Skills" data-en="Soft Skills">Soft Skills</h3>
+        <div class="cards cards--2">
+            <div class="card">
+                <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M9.5 2A5.5 5.5 0 004 7.5c0 1.58.67 3 1.74 4.01L4 14l3.5-1.76A5.49 5.49 0 0015 17.5 5.5 5.5 0 009.5 2z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="7.5" r="2" stroke="#aaa" stroke-width="2"/></svg></div>
+                <h3 class="card__title" data-ru="Аналитическое мышление" data-en="Analytical Thinking">Аналитическое мышление</h3>
+                <p class="card__text" data-ru="Разбиваю сложную задачу на мелкие шаги и нахожу оптимальное решение." data-en="I break down complex tasks into small steps and find the optimal solution.">Разбиваю сложную задачу на мелкие шаги и нахожу оптимальное решение.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#aaa" stroke-width="3" stroke-linecap="round"/></svg></div>
+                <h3 class="card__title" data-ru="Коммуникация в команде" data-en="Team Communication">Коммуникация в команде</h3>
+                <p class="card__text" data-ru="Общаюсь с дизайнерами, аналитиками и менеджерами. Обсуждаю решения, защищаю свою точку зрения." data-en="I communicate with designers, analysts and managers. I discuss solutions and defend my point of view.">Общаюсь с дизайнерами, аналитиками и менеджерами. Обсуждаю решения, защищаю свою точку зрения.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="#888" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#aaa" stroke-width="2"/></svg></div>
+                <h3 class="card__title" data-ru="Внимание к деталям" data-en="Attention to Detail">Внимание к деталям</h3>
+                <p class="card__text" data-ru="Одна ошибка в коде — и сайт сломается. Точность и внимательность критичны." data-en="One mistake in the code and the site breaks. Precision and attention to detail are critical.">Одна ошибка в коде — и сайт сломается. Точность и внимательность критичны.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Самостоятельное обучение" data-en="Self-Learning">Самостоятельное обучение</h3>
+                <p class="card__text" data-ru="Технологии меняются быстро. Умение быстро осваивать новое — ключевой навык разработчика." data-en="Technologies change quickly. The ability to quickly learn new things is a key developer skill.">Технологии меняются быстро. Умение быстро осваивать новое — ключевой навык разработчика.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#888" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Тимлидинг" data-en="Team Leadership">Тимлидинг</h3>
+                <p class="card__text" data-ru="Веду команду, распределяю задачи, слежу за дедлайнами и поддерживаю атмосферу сотрудничества." data-en="I lead the team, distribute tasks, monitor deadlines and maintain a collaborative atmosphere.">Веду команду, распределяю задачи, слежу за дедлайнами и поддерживаю атмосферу сотрудничества.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Стрессоустойчивость" data-en="Stress Resistance">Стрессоустойчивость</h3>
+                <p class="card__text" data-ru="Сохраняю спокойствие в экстренных ситуациях и при работе с горящими задачами." data-en="I stay calm in critical situations and when working on urgent tasks.">Сохраняю спокойствие в экстренных ситуациях и при работе с горящими задачами.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CAREER -->
+<section class="section section--gray" id="career">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Как начать карьеру студенту" data-en="How to Start a Career as a Student">Как начать карьеру студенту</h2>
+        <p class="section__subtitle" data-ru="Пошаговый план входа в профессию" data-en="Step-by-step plan to enter the profession">Пошаговый план входа в профессию</p>
+        <div class="timeline">
+            <div class="timeline__item">
+                <div class="timeline__number">1</div>
+                <div class="timeline__content">
+                    <h3 class="timeline__title" data-ru="Изучи основы" data-en="Learn the Basics">Изучи основы</h3>
+                    <p class="timeline__text" data-ru="HTML, CSS, JavaScript — бесплатные курсы на Stepik, Codecademy, freeCodeCamp." data-en="HTML, CSS, JavaScript — free courses on Stepik, Codecademy, freeCodeCamp.">HTML, CSS, JavaScript — бесплатные курсы на Stepik, Codecademy, freeCodeCamp.</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__number">2</div>
+                <div class="timeline__content">
+                    <h3 class="timeline__title" data-ru="Сделай первые проекты" data-en="Create Your First Projects">Сделай первые проекты</h3>
+                    <p class="timeline__text" data-ru="Личный сайт, тренажёр, мини-приложение — наполни портфолио." data-en="Personal site, trainer, mini-app — fill your portfolio.">Личный сайт, тренажёр, мини-приложение — наполни портфолио.</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__number">3</div>
+                <div class="timeline__content">
+                    <h3 class="timeline__title" data-ru="Выкладывай код на GitHub" data-en="Upload Code to GitHub">Выкладывай код на GitHub</h3>
+                    <p class="timeline__text" data-ru="Покажи работодателю, что ты умеешь и постоянно учишься." data-en="Show the employer that you can and are constantly learning.">Покажи работодателю, что ты умеешь и постоянно учишься.</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__number">4</div>
+                <div class="timeline__content">
+                    <h3 class="timeline__title" data-ru="Освой фреймворк" data-en="Master a Framework">Освой фреймворк</h3>
+                    <p class="timeline__text" data-ru="React, Vue или Angular — выбери один и строй SPA." data-en="React, Vue or Angular — choose one and build SPAs.">React, Vue или Angular — выбери один и строй SPA.</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__number">5</div>
+                <div class="timeline__content">
+                    <h3 class="timeline__title" data-ru="Пройди стажировку" data-en="Complete an Internship">Пройди стажировку</h3>
+                    <p class="timeline__text" data-ru="Начни с позиции стажёра в IT-компании или на фрилансе." data-en="Start as an intern in an IT company or freelance.">Начни с позиции стажёра в IT-компании или на фрилансе.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DAY -->
+<section class="section" id="day">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Один день из жизни" data-en="One Day in the Life">Один день из жизни</h2>
+        <p class="section__subtitle" data-ru="Как выглядит рабочий день разработчика" data-en="What a workday of a Developer looks like">Как выглядит рабочий день разработчика</p>
+        <div class="cards cards--3">
+            <div class="card">
+                <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 1v3M10 1v3M14 1v3" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <h3 class="card__title" data-ru="09:00 — Утро" data-en="09:00 — Morning">09:00 — Утро</h3>
+                <p class="card__text" data-ru="Кофе, проверка почты и таск-трекера." data-en="Coffee, checking email and task tracker.">Кофе, проверка почты и таск-трекера.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="09:30 — Стендап" data-en="09:30 — Standup">09:30 — Стендап</h3>
+                <p class="card__text" data-ru="Короткая созвонка с командой." data-en="Quick call with the team.">Короткая созвонка с командой.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#888" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="10:00 — Код" data-en="10:00 — Code">10:00 — Код</h3>
+                <p class="card__text" data-ru="Погружаюсь в задачу: пишу компоненты." data-en="I dive into the task: writing components.">Погружаюсь в задачу: пишу компоненты.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 1v3M10 1v3M14 1v3" stroke="#aaa" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <h3 class="card__title" data-ru="13:00 — Обед" data-en="13:00 — Lunch">13:00 — Обед</h3>
+                <p class="card__text" data-ru="Перерыв, прогулка, общение с коллегами." data-en="Break, walking, communication with colleagues.">Перерыв, прогулка, общение с коллегами.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><circle cx="11" cy="11" r="8" stroke="#888" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="14:00 — Отладка" data-en="14:00 — Debugging">14:00 — Отладка</h3>
+                <p class="card__text" data-ru="Ищу баги, проверяю код в DevTools." data-en="I look for bugs, check code in DevTools.">Ищу баги, проверяю код в DevTools.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="#888" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="15:00 — Встреча" data-en="15:00 — Meeting">15:00 — Встреча</h3>
+                <p class="card__text" data-ru="Обсуждение текущих задач с командой и планирование спринта." data-en="Discussing current tasks with the team and sprint planning.">Обсуждение текущих задач с командой и планирование спринта.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--yellow"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="16:00 — Деплой" data-en="16:00 — Deployment">16:00 — Деплой</h3>
+                <p class="card__text" data-ru="Публикую изменения, настраиваю CI/CD." data-en="I publish changes, set up CI/CD.">Публикую изменения, настраиваю CI/CD.</p>
+            </div>
+            <div class="card">
+                <div class="card__icon card__icon--blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="17:30 — Обучение" data-en="17:30 — Learning">17:30 — Обучение</h3>
+                <p class="card__text" data-ru="Читаю документацию, пробую новые инструменты." data-en="I read documentation, try new tools.">Читаю документацию, пробую новые инструменты.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ERTH -->
+<section class="section section--accent" id="ertch">
+    <div class="section__container">
+        <h2 class="section__title section__title--light" data-ru="Почему роль важна для ЭРТХ" data-en="Why the Role Matters for ERTH">Почему роль важна для ЭРТХ</h2>
+        <p class="section__subtitle section__subtitle--light" data-ru="Крупная IT-компания и разработка" data-en="Major IT company and development">Крупная IT-компания и разработка</p>
+        <div class="cards cards--2">
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M23 6l-9.5 9.5-5-5L1 18" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 6h6v6" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Цифровая трансформация" data-en="Digital Transformation">Цифровая трансформация</h3>
+                <p class="card__text" data-ru="ЭРТХ создаёт цифровые продукты для миллионов пользователей." data-en="ERTH creates digital products for millions of users.">ЭРТХ создаёт цифровые продукты для миллионов пользователей.</p>
+            </div>
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M9 18V5l12-2v13" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="#555" stroke-width="2"/><circle cx="18" cy="16" r="3" stroke="#555" stroke-width="2"/></svg></div>
+                <h3 class="card__title" data-ru="Инновации и новые сервисы" data-en="Innovation and New Services">Инновации и новые сервисы</h3>
+                <p class="card__text" data-ru="Без разработчиков невозможны новые платформы." data-en="Without developers, new platforms are impossible.">Без разработчиков невозможны новые платформы.</p>
+            </div>
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M10 22V14a2 2 0 114 0v8" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 7V4a2 2 0 114 0v3M7 14h10" stroke="#555" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <h3 class="card__title" data-ru="Карьера в ЭРТХ" data-en="Career at ERTH">Карьера в ЭРТХ</h3>
+                <p class="card__text" data-ru="Стажировки, менторство и карьерный рост." data-en="Internships, mentorship and career growth.">Стажировки, менторство и карьерный рост.</p>
+            </div>
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><circle cx="12" cy="12" r="10" stroke="#333" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="#555" stroke-width="2"/></svg></div>
+                <h3 class="card__title" data-ru="Масштаб и влияние" data-en="Scale and Impact">Масштаб и влияние</h3>
+                <p class="card__text" data-ru="Каждый проект ЭРТХ влияет на индустрию." data-en="Every ERTH project impacts the industry.">Каждый проект ЭРТХ влияет на индустрию.</p>
+            </div>
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#333" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Экосистема сервисов" data-en="Service Ecosystem">Экосистема сервисов</h3>
+                <p class="card__text" data-ru="Разработчики связывают десятки продуктов в единую удобную платформу для пользователей." data-en="Developers connect dozens of products into a single convenient platform for users.">Разработчики связывают десятки продуктов в единую удобную платформу для пользователей.</p>
+            </div>
+            <div class="card card--light">
+                <div class="card__icon card__icon--dark"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" filter="url(#shadow3d-sm)"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="card__title" data-ru="Клиентский опыт" data-en="Customer Experience">Клиентский опыт</h3>
+                <p class="card__text" data-ru="Каждая строка кода влияет на то, как миллионы людей взаимодействуют с сервисами ЭРТХ." data-en="Every line of code affects how millions of people interact with ERTH services.">Каждая строка кода влияет на то, как миллионы людей взаимодействуют с сервисами ЭРТХ.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUIZ -->
+<section class="section" id="quiz">
+    <div class="section__container">
+        <h2 class="section__title" data-ru="Проверь себя" data-en="Test Yourself">Проверь себя</h2>
+        <p class="section__subtitle" data-ru="Мини-тест на понимание профессии" data-en="Mini-test on understanding the profession">Мини-тест на понимание профессии</p>
+
+        <div class="quiz" id="quiz1">
+            <div class="quiz__question" data-ru="1. Что делает разработчик?" data-en="1. What does a Developer do?">1. Что делает разработчик?</div>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz1')" data-ru="Проектирует базы данных" data-en="Designs databases">Проектирует базы данных</button>
+            <button class="quiz__option" onclick="checkQuiz(this,true,'quiz1')" data-ru="Создаёт сайты и приложения" data-en="Creates websites and applications">Создаёт сайты и приложения</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz1')" data-ru="Управляет серверами" data-en="Manages servers">Управляет серверами</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz1')" data-ru="Продаёт рекламу" data-en="Sells advertising">Продаёт рекламу</button>
+            <div class="quiz__result" id="quiz1-result"></div>
+        </div>
+
+        <div class="quiz" id="quiz2">
+            <div class="quiz__question" data-ru="2. Какой язык нужен для фронтенда?" data-en="2. Which language is needed for frontend?">2. Какой язык нужен для фронтенда?</div>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz2')">Java</button>
+            <button class="quiz__option" onclick="checkQuiz(this,true,'quiz2')">JavaScript</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz2')">C++</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz2')">PHP</button>
+            <div class="quiz__result" id="quiz2-result"></div>
+        </div>
+
+        <div class="quiz" id="quiz3">
+            <div class="quiz__question" data-ru="3. Что такое React?" data-en="3. What is React?">3. Что такое React?</div>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz3')" data-ru="База данных" data-en="A database">База данных</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz3')" data-ru="Операционная система" data-en="An operating system">Операционная система</button>
+            <button class="quiz__option" onclick="checkQuiz(this,true,'quiz3')" data-ru="JavaScript-библиотека для UI" data-en="A JavaScript library for UI">JavaScript-библиотека для UI</button>
+            <button class="quiz__option" onclick="checkQuiz(this,false,'quiz3')" data-ru="Графический редактор" data-en="A graphic editor">Графический редактор</button>
+            <div class="quiz__result" id="quiz3-result"></div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__container">
+        <p class="footer__text">&copy; 2026 &middot; <span class="accent-blue">DEVPROFILE</span> &middot; <span data-ru="Профессия, которая создаёт цифровое будущее" data-en="A profession that creates the digital future">Профессия, которая создаёт цифровое будущее</span></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
